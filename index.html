@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">  <!--Tipo de simbolos que podemos utilizar-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Escala o diseño responisve-->
+    <link rel="stylesheet" href="style.css">  <!-- LINK A CSS -->
     <title>Document</title>  <!--Esta etiqueta le da el nombre a la pestaña-->
+    <script src="https://kit.fontawesome.com/e8532f7ad1.js" crossorigin="anonymous"></script>
 </head>
 <body>  <!--Todo lo que coloquemos aca lo va a ver el usuario-->
-   <header>
-        <h1> Dusky</h1>
-        <img src="./assets/logo.jpeg" alt="">
+   <header id="header">
+       <h1>DUSKY</h1>
         <!--Menu de navegación-->
+    <div class="navicon">
         <nav>
-            <table>
-                <Tr> 
-                    <td><a href="index.html">HOME</a></td>
-                    <td><a href="./pages/new_in.html">NEW IN</a></td>
-                    <td><a href="./pages/accesories.html">ACCESORIES</a></td>
-                    <td><a href="./pages/seasons.html">SEASONS</a></td>
-                    <td><a href="./pages/sale.html">SALE</a></td>
-                </Tr>
-         </table>
-        </nav>    
+            <ul>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-heart"></i></li>
+            </ul>
+        </nav>
+    </div>
    </header>
-    <br> <br> <br>
     <MAIN> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BBJa32lCaaY?si=mke8fxTjFUVvknH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--Menu de navegación-->
+        <div class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="./pages/new_in.html">NEW IN</a></li>
+                    <li><a href="./pages/accesories.html">ACCESORIES</a></li>
+                    <li><a href="./pages/seasons.html">SEASONS</a></li>
+                    <li><a href="./pages/sale.html">SALE</a></li>
+                </ul>
+        </div>
+        <div class="videoprom">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A8CDVkV5pso?si=a4-lVMR0dIVS_bJ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             At magnam distinctio fuga, esse unde rerum atque eveniet recusandae harum ad totam dolorem vitae expedita est eius nemo? Dolores, soluta totam. 
-        </p>    
-        <section>
-            <table>
-                <td><a href="./pages/men.html"><img src="./assets/men.jpeg" alt="MEN CLOTH"></a><p>MEN</p></td>
-                <td><a href="./pages/woman.html"><img src="./assets/woman.jpeg" alt="WOMAN CLOTH"></a><p>WOMAN</p></td>
-            </table>
-        </section>
+        </p>   
+        <div class="sectiongender">    
+            <section>
+                <ul>
+                    <li class="img-men"><a href="./pages/men.html"><img src="./assets/men.jpeg" alt="MEN CLOTH"></a><p>MEN</p></li>
+                    <li class="img-woman"><a href="./pages/woman.html"><img src="./assets/woman.jpeg" alt="WOMAN CLOTH"></a><p>WOMAN</p></li>
+                </ul>
+            </section>
+        </div>  
         <section>
             <table>
                 <td><p>CHECKOUT ALL OF OUR NEW SEASON PRODUCTS!</p> <a href="./pages/new_in.html">CLICK HERE</a></td>
