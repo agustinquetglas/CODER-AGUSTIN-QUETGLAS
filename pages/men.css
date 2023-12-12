@@ -30,13 +30,6 @@ h1 {
     width: 40px;
     padding: 10px;
 }
-.nav ul{
-    margin: 0;
-    padding: 0; 
-    list-style: none;
-    text-align: center;
-    background-color: lightgray;
-}
 .nav li{
     display: inline-block;
 }
@@ -48,4 +41,28 @@ h1 {
 }
 body {
     background-color: linear-gradient(150deg, gray white);
+}
+footer {
+    background-color: lightgray;
+    display: inline-block;
+   justify-content: center;
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 0px;
+}
+.barra-publi p{
+    color: white;
+    background-color: gray;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 0px;
+}
+.nav ul{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    text-align: center;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 0px;
 }
