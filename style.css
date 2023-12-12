@@ -16,11 +16,31 @@ header{
 h1 {
     padding: 30px;
 }
+.search-bar {
+    position: relative;
+    display: flex;
+}
+.search-bar input{
+    padding: 8px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    width: 300px;
+}
+.search-bar button{
+    padding: 8px;
+    margin: auto;
+    background-color: gray;
+    outline: none;
+    border: 0;
+}
 .navicon ul{
     text-align: right;
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-right: 40px;
 }
 .navicon li{
     display: inline-block;
@@ -71,51 +91,67 @@ body {
     list-style: none;
 }
 .sectiongender {
-    border-color: black;
-    border-width: medium;
-    border-style: none;
+   margin: 50px;
 }
-.men-img{
+.gender{
     border: 1.5px solid black;
     border-radius: 5px;
-}
-.woman-img{
-    border: 1.5px solid black;
-    border-radius: 5px;
+    width: 250px;
+    height: 250px;
 }
 .categories{
+    display: flex;
    text-align: center;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.cat-text{
+    align-self: center;
+    padding-left: 100px;
 }
 .categories_img {
     display: grid;
     grid-template-areas:
     "cat-01 cat-02" 
     "cat-03 cat-04";
-    justify-content: right;
+    padding-left: 120px;
+    padding-inline: 15px;
 }
 .cat-01{
     grid-column: "cat-01";
     padding: 65px;
     border: 1.5px solid black;
     border-radius: 5px;
+    width: 120px;
+    height: 100px;
+    margin: 15px;
 }
 .cat-02{
     grid-column: "cat-02";
     padding: 65px;
     border: 1.5px solid black;
     border-radius: 5px;
+    width: 120px;
+    height: 100px;
+    margin: 15px;
 }
 .cat-03{
     grid-area: "cat-03";
     padding: 65px;
     border: 1.5px solid black;
     border-radius: 5px;
+    width: 120px;
+    height: 100px;
+    margin: 15px;
 }
 .cat-04{
     grid-area: "cat-04";
     padding: 65px;
     border: 1.5px solid black;
     border-radius: 5px;
+    width: 120px;
+    height: 100px;
+    margin: 15px;
 }
 footer {
     background-color: lightgray;
@@ -124,4 +160,5 @@ footer {
    text-align: center;
    border: 2px solid black;
    border-radius: 0px;
+   padding: 20px;
 }
