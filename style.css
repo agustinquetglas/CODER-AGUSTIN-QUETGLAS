@@ -36,6 +36,8 @@ h1 {
     list-style: none;
     text-align: center;
     background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 0px;
 }
 .nav li{
     display: inline-block;
@@ -54,6 +56,13 @@ body {
    place-items: center;
    padding: 50px;
 }
+.barra-publi p{
+    color: white;
+    background-color: gray;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 0px;
+}
 .sectiongender ul{
     display: flex;
     padding: 20px;
@@ -66,17 +75,53 @@ body {
     border-width: medium;
     border-style: none;
 }
-.categories{
-    display: flex;
-    flex-direction: column;
+.men-img{
+    border: 1.5px solid black;
+    border-radius: 5px;
 }
-.top{
-    margin-bottom: 15px;
-    margin-right: 15px;
+.woman-img{
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+.categories{
+   text-align: center;
+}
+.categories_img {
+    display: grid;
+    grid-template-areas:
+    "cat-01 cat-02" 
+    "cat-03 cat-04";
+    justify-content: right;
+}
+.cat-01{
+    grid-column: "cat-01";
+    padding: 65px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+.cat-02{
+    grid-column: "cat-02";
+    padding: 65px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+.cat-03{
+    grid-area: "cat-03";
+    padding: 65px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+.cat-04{
+    grid-area: "cat-04";
+    padding: 65px;
+    border: 1.5px solid black;
+    border-radius: 5px;
 }
 footer {
     background-color: lightgray;
     display: inline-block;
    justify-content: center;
    text-align: center;
+   border: 2px solid black;
+   border-radius: 0px;
 }
