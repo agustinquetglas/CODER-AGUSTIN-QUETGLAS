@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">  <!-- LINK A CSS -->
+    <link rel="stylesheet" href="../css/main.css">  <!-- LINK A CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/e8532f7ad1.js" crossorigin="anonymous"></script> <!--ICONOS MENU NAV-->
 </head>
 <body>
-    <header id="header">
-        <em><h1>DUSKY</h1></em>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-         <!--Menu de navegación-->
-        <div class="navicon">
-            <nav>
-                <ul>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li><i class="fa-solid fa-user"></i></li>
-                    <li><i class="fa-solid fa-heart"></i></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h1>DUSKY</h1>
+                <!--Boton del menu-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item"><a class="nav-link active" href="../index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./new_in.html">NEW IN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./accesories.html">ACCESORIES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./seasons.html">SEASONS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sale.html">SALE</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     <main> 
-         <!--Menu de navegación-->
-            <div class="nav">
-               <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="./new_in.html">NEW IN</a></li>
-                    <li><a href="./accesories.html">ACCESORIES</a></li>
-                    <li><a href="./seasons.html">SEASONS</a></li>
-                    <li><a href="./sale.html">SALE</a></li>
-               </ul>
-           </div>
-        <br><br><br>
         <div class="barra-publi">
             <p>Envío Gratis en compras superiores a: $$$$ | Llevate un llavero de regalo por compras superiores a: $$$$ | Hasta 6 cuotas sin interés en compras superiores a: $$$$</p>
         </div>
@@ -81,5 +78,6 @@
                 totam dolorem vitae expedita est eius nemo? Dolores, soluta totam. </p></td>
         </table>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
