@@ -219,6 +219,9 @@ footer {
     row-gap: 50px;
     column-gap: 20px;
 }
+.new-in-imgs img{
+    width: 200px;
+}
 
 
 /* season.html */

@@ -1,0 +1,13 @@
+header {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    display:grid;
+    grid-template-areas:
+    " h1 search-bar navicon" ;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }

@@ -3,63 +3,120 @@
 <head>
     <meta charset="UTF-8">  <!--Tipo de simbolos que podemos utilizar-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Escala o diseño responisve-->
-    <link rel="stylesheet" href="./style.css">  <!-- LINK A CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">  <!-- LINK A CSS -->
     <title>DUSKY</title>  <!--Esta etiqueta le da el nombre a la pestaña-->
     <script src="https://kit.fontawesome.com/e8532f7ad1.js" crossorigin="anonymous"></script>
 </head>
 <body>  <!--Todo lo que coloquemos aca lo va a ver el usuario-->
    <header>
-        <em><h1>DUSKY</h1></em>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <!--iconos-->
-        <section class="navicon">
-            <nav>
-                <ul>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li><i class="fa-solid fa-user"></i></li>
-                    <li><i class="fa-solid fa-heart"></i></li>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <h1>DUSKY</h1>
+            <!--Boton del menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/new_in.html">NEW IN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/accesories.html">ACCESORIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/seasons.html">SEASONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/sale.html">SALE</a></li>
                 </ul>
-            </nav>
-        </section>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
    </header>
     <main> 
         <!--Menu de navegación-->
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="./pages/new_in.html">NEW IN</a></li>
-                <li><a href="./pages/accesories.html">ACCESORIES</a></li>
-                <li><a href="./pages/seasons.html">SEASONS</a></li>
-                <li><a href="./pages/sale.html">SALE</a></li>
-            </ul>
-        </div>
+       <!-- <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h1>DUSKY</h1>
+                Boton del menu
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/new_in.html">NEW IN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/accesories.html">ACCESORIES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/seasons.html">SEASONS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/sale.html">SALE</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav> -->
+        <!--<section class="nav">
+            <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="./pages/new_in.html">NEW IN</a></li>
+                    <li><a href="./pages/accesories.html">ACCESORIES</a></li>
+                    <li><a href="./pages/seasons.html">SEASONS</a></li>
+                    <li><a href="./pages/sale.html">SALE</a></li>
+                </ul>
+            </div>
+        </section> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav> -->
         <div class="videoprom">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/A8CDVkV5pso?si=a4-lVMR0dIVS_bJ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="barra-publi">
             <p>Envío Gratis en compras superiores a: $$$$ | Llevate un llavero de regalo por compras superiores a: $$$$ | Hasta 6 cuotas sin interés en compras superiores a: $$$$</p>
         </div>
-        <div class="sectiongender">    
-            <section>
+        <section class="sectiongender">    
+            <div>
                 <ul>
-                    <li><a style="text-decoration: none;" href="./pages/men.html"><img class="gender" style="width: 150px x 200px;" src="./assets/men.jpeg" alt="MEN CLOTH"></a><p style="text-align: center;">MEN</p></li>
-                    <li><a style="text-decoration: none;" href="./pages/woman.html"><img class="gender" style="width: 170px x 220px;" src="./assets/woman.jpeg" alt="WOMAN CLOTH"></a><p style="text-align: center;">WOMAN</p></li>
+                    <li><a href="./pages/men.html"><img class="genderCard"src="./assets/men.jpeg" alt="MEN CLOTH"></a><p>MEN</p></li>
+                    <li><a href="./pages/woman.html"><img class="genderCard" src="./assets/woman.jpeg" alt="WOMAN CLOTH"></a><p>WOMAN</p></li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
         <div class="categories">
             <div class="cat-text">
-                <p style="align-self: center;">CHECKOUT ALL OF OUR NEW SEASON PRODUCTS!</p>
-                <a style="align-self: center; text-decoration: none; color: black;" href="./pages/new_in.html">CLICK HERE</a>
+                <p >CHECKOUT ALL OF OUR NEW SEASON PRODUCTS!</p>
+                <a  href="./pages/new_in.html">CLICK HERE</a>
             </div>
-            <section class="categories_img">
-                <a style="text-decoration: none;" href="./pages/tops.html"><img class="cat-01"; src="./assets/tops.jpeg" alt="TOP CLOTH"><p style="text-align: center; color: black;">TOP</p></a>
-                <a style="text-decoration: none;" href="./pages/bottoms.html"><img class="cat-02"; src="./assets/bottoms.jpeg" alt="BOTTOM CLOTH"><p style="text-align: center; color: black;">BOTTOM</p></a>
-                <a style="text-decoration: none;" href="./pages/accesories.html"><img class="cat-03"; src="./assets/accesories.jpeg" alt="ACCESORIES"><p style="text-align: center; color: black;">ACCESORIES</p></a>
-                <a style="text-decoration: none;" href="./pages/sale.html"><img class="cat-04"; src="./assets/sales.jpeg" alt="SALE PRODUCTS"><p style="text-align: center; color: black;">SALE PRODUCTS</p></a>
+            <section class="categories_img d-flex justify-content-around">
+                <a href="./pages/tops.html"><img id="cat01" class="catCard"; src="./assets/tops.jpeg" alt="TOP CLOTH"><p>TOP</p></a>
+                <a href="./pages/bottoms.html"><img id="cat02"  class="catCard"; src="./assets/bottoms.jpeg" alt="BOTTOM CLOTH"><p>BOTTOM</p></a>
+                <a href="./pages/accesories.html"><img id="cat03"  class="catCard"; src="./assets/accesories.jpeg" alt="ACCESORIES"><p>ACCESORIES</p></a>
+                <a href="./pages/sale.html"><img id="cat04"  class="catCard"; src="./assets/sales.jpeg" alt="SALE PRODUCTS"><p>SALE PRODUCTS</p></a>
             </section>
         </div>
     </main>
@@ -84,5 +141,6 @@
                 totam dolorem vitae expedita est eius nemo? Dolores, soluta totam. </p></td>
         </table>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

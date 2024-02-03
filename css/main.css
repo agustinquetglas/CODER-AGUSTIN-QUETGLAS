@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: radial-gradient(circle, rgba(163,163,177,1) 3%, rgba(216,216,222,1) 27%, rgba(255,255,255,1) 52%);
+  display: grid;
+  grid-template-areas: 
+  "header nav header"
+  "main main main"
+  " main main main"
+  "footer footer footer";
+}
+
+header {
+  margin: auto;
+  padding: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  width: 400px;
+}
+
+.search-bar input {
+  padding: 8px;
+  padding-right: 35px;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  width: 400px;
+}
+
+.search-bar button {
+  padding: 8px;
+  margin: auto;
+  background-color: gray;
+  outline: none;
+  border: 0;
+}
+
+.navicon ul {
+  text-align: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.navicon li {
+  display: inline-block;
+}
+
+.navicon i {
+  display: block;
+  width: 40px;
+  padding: 10px;
+}
+
+.navbar{
+  width: 100%;
+  background-color: gray;
+  height: 100px;
+  padding: 20px;
+}
+.navbar-collapse{
+  background-color: gray;
+  padding: 20px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+}
+
+.nav li {
+  place-content: center;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.videoprom {
+  display: grid;
+  place-items: center;
+  padding: 50px;
+}
+
+.barra-publi p {
+  color: white;
+  background-color: gray;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 0px;
+}
+
+/* index.html*/
+.sectiongender ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  place-items: center;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 50px;
+}
+.genderCard {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+}
+
+.categories {
+  /*display: flex; si sacas cambia el orden de tus imagenes*/
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cat-text {
+  text-decoration: none; 
+  text-align: center;
+}
+.cat-text a{
+  color: black;
+  text-align: center;
+}
+
+.categories_img {
+  display: grid;
+  grid-template-areas: "cat01 cat02" "cat03 cat04";
+  padding-inline: 15px;
+  padding-top: 50px;
+  text-align: center;
+}
+.categories_img a{
+  color: black;
+  text-decoration: none;
+}
+
+.catCard {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+
+footer {
+  background-color: lightgray;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .videoprom {
+    width: auto;
+    height: auto;
+  }
+  .cat-text {
+    display: none;
+  }
+  .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .categories_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new-in-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .footer {
+    font-size: small;
+  }
+}
+
+/*# sourceMappingURL=main.css~.map */
