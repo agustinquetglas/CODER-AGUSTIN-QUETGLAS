@@ -21,47 +21,6 @@ header {
   top: 0;
   width: 100%;
 }
-
-.search-bar {
-  display: flex;
-  position: relative;
-  width: 400px;
-}
-
-.search-bar input {
-  padding: 8px;
-  padding-right: 35px;
-  border-radius: 5px 0 0 5px;
-  border: 0;
-  width: 400px;
-}
-
-.search-bar button {
-  padding: 8px;
-  margin: auto;
-  background-color: gray;
-  outline: none;
-  border: 0;
-}
-
-.navicon ul {
-  text-align: right;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-right: 40px;
-}
-
-.navicon li {
-  display: inline-block;
-}
-
-.navicon i {
-  display: block;
-  width: 40px;
-  padding: 10px;
-}
-
 .navbar{
   width: 100%;
   background-color: gray;
@@ -73,34 +32,6 @@ header {
   padding: 20px;
 }
 
-
-
-.nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  background-color: lightgray;
-  border: 2px solid black;
-  border-radius: 0px;
-  display: flex;
-  justify-content: space-evenly;
-  position: fixed;
-  width: 100%;
-}
-
-.nav li {
-  place-content: center;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  color: black;
-}
-
-.nav a {
-  text-decoration: none;
-  color: black;
-}
 
 .videoprom {
   display: grid;
@@ -132,6 +63,12 @@ header {
   border-radius: 5px;
   width: 250px;
   height: 250px;
+}
+
+.genderCard:hover{
+  width: 300px;
+  height: 300px;
+  transition-duration: 0.5s;
 }
 
 .categories {
@@ -169,6 +106,13 @@ header {
   height: 200px;
   margin: 15px;
 }
+
+.catCard:hover{
+  width: 250px;
+  height: 250px;
+  transition-duration: 0.5s;
+}
+
 
 footer {
   background-color: lightgray;
@@ -238,6 +182,8 @@ footer {
 /* tops.html */
 
 /* bottoms.html */
+
+/* TABLETS */
 
 /* MOBILE */
 
