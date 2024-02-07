@@ -22,16 +22,18 @@ header {
   width: 100%;
 }
 .navbar{
-  width: 100%;
-  background-color: gray;
+  background-color: #bdb76b;
   height: 100px;
   padding: 20px;
 }
 .navbar-collapse{
-  background-color: gray;
-  padding: 20px;
+  background-color: #bdb76b;
 }
 
+.nav-item{
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 .videoprom {
   display: grid;
@@ -69,6 +71,26 @@ header {
   width: 300px;
   height: 300px;
   transition-duration: 0.5s;
+}
+
+.card-img-top{
+justify-content: center;
+width: 350px;
+height: 300px;
+margin: 10px;
+}
+
+.card{
+  position: static;
+}
+
+.card-link{
+  text-decoration: none;
+}
+
+.card-title{
+  border-bottom: 1px solid #bdb76b;
+  padding: 10px;
 }
 
 .categories {
@@ -242,7 +264,7 @@ header {
 
 @media (max-width: 768px){
   .navbar-collapse{
-    box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .5);
+    box-shadow: 0 1004vmax 0 1000vmax rgba(0, 0, 0, .5);
 
   }
   .videoprom {
