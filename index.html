@@ -45,12 +45,12 @@
             <p>Envío Gratis en compras superiores a: $$$$ | Llevate un llavero de regalo por compras superiores a: $$$$ | Hasta 6 cuotas sin interés en compras superiores a: $$$$</p>
         </div>
         <section class="sectiongender">    
-            <div>
-                <ul>
-                    <li><a href="./pages/men.html"><img class="genderCard"src="./assets/carr1.jpg" alt="MEN CLOTH"></a><p>MEN</p></li>
-                    <li><a href="./pages/woman.html"><img class="genderCard" src="./assets/carr04.jpg" alt="WOMAN CLOTH"></a><p>WOMAN</p></li>
-                </ul>
-            </div>
+          <div>
+            <ul>
+              <li><a href="./pages/men.html"><img class="genderCard"src="./assets/carr1.jpg" alt="MEN CLOTH"></a><p>MEN</p></li>
+              <li><a href="./pages/woman.html"><img class="genderCard" src="./assets/carr04.jpg" alt="WOMAN CLOTH"></a><p>WOMAN</p></li>
+            </ul>
+          </div>
         </section>
         <div class="container">
           <div class="row justify-content-center">
@@ -95,7 +95,7 @@
                   <img class="card-img-top img-fluid" src="./assets/carr7.jpg" alt="Cat 4">
                   <div class="card-body">
                     <h5 class="card-title">SEASONS</h5>
-                    <p class="card-text">Step into style with our latest seasonal fashion! </p>
+                    <p class="card-text"> Unleash your style this season! </p>
                   </div>
                 </div>
               </a>
@@ -121,13 +121,14 @@
                 <li><a href="./pages/new_in.html">NEW IN</a></li>
                 <li><a href="./pages/sale.html">SALE</a></li>
                 <li>
-                    <button type="button" class="btn btn-secondary"
-                        data-bs-toggle="popover" data-bs-placement="right"
-                        data-bs-custom-class="custom-popover"
-                        data-bs-title="Custom popover"
-                        data-bs-content="This popover is themed via CSS variables.">
-                        Contacts
-                    </button>
+                  <h2>Mis Redes Sociales</h2>
+
+                  <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/agustin_quetglas" target="_blank"><i class="fab fa-instagram"></i> agustin_quetglas </a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone= 3794809049" target="_blank"><i class="fab fa-whatsapp"></i> +54 9 379 480-9049</a></li>
+                    <li><a href="https://github.com/agustinquetglas" target="_blank"><i class="fab fa-github"></i> agustinquetglas </a></li>
+                    <!-- Añade más enlaces a tus redes sociales aquí -->
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -148,6 +149,13 @@
           &copy; 2024 DUSKY | Design by Agustin Quetglas
         </div>
       </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <!--Inicializar los popovers-->
+      <script>
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+          })
+      </script>
 </body>
 </html>
