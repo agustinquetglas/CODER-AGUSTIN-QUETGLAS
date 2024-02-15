@@ -77,6 +77,19 @@ header {
   border-radius: 0px;
 }
 
+.product {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  display: inline-block;
+  text-align: center;
+}
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+}
 
 /* index.html*/
 
@@ -299,48 +312,17 @@ footer{
 }
 
 /* sale.html */
-
-.sale-imgs{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  justify-items: center;
-  justify-content:space-around;
-  row-gap: 50px;
+.sales-price{
+  text-decoration: line-through;
 }
-
-/* new-in.html */
-
-.new-in-imgs{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  justify-items: center;
-  justify-content:space-around;
-  row-gap: 50px;
-}
-.new-in-imgs img{
-  width: 200px;
-}
-
-/* season.html */
-
-.season-imgs{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  justify-items: center;
-  justify-content:space-around;
-  row-gap: 50px;
+  
+.sales-new-price{
+  color: red;
 }
 
 /* men.html */
 
 /* woman.html */
-
-/* tops.html */
-
-/* bottoms.html */
 
 /* TABLETS */
 
