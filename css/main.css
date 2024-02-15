@@ -102,6 +102,11 @@ header {
   border-radius: 5px;
 }
 
+.galerie-products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+}
 
 /* index.html*/
 
@@ -312,8 +317,6 @@ footer{
   transition-duration: 0.5s;
 }
 
-.sort
-
 /* accesories.html */
 
 .accesories-imgs{
@@ -410,33 +413,9 @@ footer{
     align-items: center;
   }
 
-  .new-in-imgs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .accesories-imgs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .sale-imgs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
   .footer {
     font-size: small;
   }
 }
 
 /*# sourceMappingURL=main.css~.map */
-
-.galerie-products{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
