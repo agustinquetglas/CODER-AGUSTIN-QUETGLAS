@@ -365,26 +365,10 @@ footer{
     flex-direction: column;
     align-items: center;
   }
-  .new-in-imgs {
+  .galerie-products{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .accesories-imgs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .sale-imgs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .footer {
-    font-size: small;
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
@@ -412,6 +396,13 @@ footer{
     flex-direction: column;
     align-items: center;
   }
+
+  .galerie-products{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  
 
   .footer {
     font-size: small;
