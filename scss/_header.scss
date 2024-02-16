@@ -6,4 +6,41 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 3;
+}
+
+.title {
+  margin-left: 20px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+  }
+}
+
+.navbar {
+  background-color: #bdb76b;
+  height: 100px;
+
+  &-collapse {
+    background-color: #bdb76b;
+    padding: 10px;
+  }
+
+  &-item {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    &:hover {
+      transform: scale(1.2);
+      transition-duration: 0.5s;
+    }
+
+    font-size: 20px;
+  }
 }

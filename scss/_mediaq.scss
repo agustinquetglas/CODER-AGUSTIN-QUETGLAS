@@ -1,63 +1,35 @@
+/* TABLETS */
 @media (max-width: 768px) {
-    .navbar-collapse {
-      box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .5);
-    }
-  
-    .videoprom {
-      width: auto;
-      height: auto;
-    }
-  
-    .cat-text {
-      display: none;
-    }
-  
-    .categories,
-    .categories_img {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .new-in-imgs,
-    .accesories-imgs,
-    .sale-imgs {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-    }
-  
-    .footer {
-      font-size: small;
-    }
+  .navbar-collapse {
+    box-shadow: 0 1004vmax 0 1000vmax rgba(0, 0, 0, .5);
   }
-  
-  @media (max-width: 480px) {
-    .videoprom {
-      width: auto;
-      height: auto;
-    }
-  
-    .cat-text {
-      display: none;
-    }
-  
-    .categories,
-    .categories_img {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .new-in-imgs,
-    .accesories-imgs,
-    .sale-imgs {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-    }
-  
-    .footer {
-      font-size: small;
-    }
+
+  .videoprom {
+    width: auto;
+    height: auto;
   }
+
+  .galerie-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .videoprom {
+    width: auto;
+    height: auto;
+  }
+
+  .galerie-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .footer {
+    font-size: small;
+  }
+}
