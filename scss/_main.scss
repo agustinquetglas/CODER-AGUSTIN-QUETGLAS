@@ -39,6 +39,10 @@
   }
 }
 
+.breadcrumb-class{
+  --bs-breadcrumb-divider: ">"; 
+}
+
 .galerie-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

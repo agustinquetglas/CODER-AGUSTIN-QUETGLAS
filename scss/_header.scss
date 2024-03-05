@@ -15,6 +15,7 @@ header {
   a {
     text-decoration: none;
     color: black;
+    font-family: map-get($fonts, principal);
   }
 
   &:hover {
@@ -24,11 +25,12 @@ header {
 }
 
 .navbar {
-  background-color: $brandYellow;
+  background-color: map-get($colors, primary);
   height: 100px;
+  font-family: map-get($fonts, principal);
 
   &-collapse {
-    background-color: #bdb76b;
+    background-color: map-get($colors, primary);
     padding: 10px;
   }
 

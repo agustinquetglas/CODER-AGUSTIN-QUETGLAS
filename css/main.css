@@ -33,11 +33,16 @@ header {
 .title a{
   text-decoration: none;
   color: black;
+  font-family: 'Rubik', sans-serif;
 }
 
 .title:hover{
   transform: scale(1.05);
   transition-duration: 0.5s;
+}
+
+.breadcrumb-class{
+  --bs-breadcrumb-divider: ">"; 
 }
 
 .breadcrumb-item{
@@ -55,6 +60,7 @@ header {
 .navbar{
   background-color: #bdb76b;
   height: 100px;
+  font-family: 'Rubik', sans-serif;
 }
 .navbar-collapse{
   background-color: #bdb76b;
