@@ -26,14 +26,11 @@ header {
   z-index: 3;
 }
 
-.title{
-  margin-left: 20px;
-}
-
-.title a{
+.title {
   text-decoration: none;
   color: black;
   font-family: 'Rubik', sans-serif;
+  margin-left: o auto;
 }
 
 .title:hover{
@@ -56,7 +53,9 @@ header {
 .sort{
   margin-left: 10px;
 }
-
+.offcanvas{
+  background-color: #bdb76b !important;
+}
 .navbar{
   background-color: #bdb76b;
   height: 100px;
@@ -65,6 +64,7 @@ header {
 .navbar-collapse{
   background-color: #bdb76b;
   padding: 10px;
+  justify-content: flex-start;
 }
 
 .nav-item{
@@ -73,12 +73,26 @@ header {
 }
 
 .nav-item:hover{
-  transform: scale(1.2);
+  transform: scale(1.02);
   transition-duration: 0.5s;
+  position: static;
 }
 
 .nav-item {
   font-size: 20px;
+}
+
+.user-menu-button{
+  margin: 0px 20px 0px 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: #bdb76b;
+}
+
+.user-menu{
+  display: none;
+  align-items: center;
 }
 
 .videoprom {
@@ -226,15 +240,13 @@ header {
 
 .contact-btn {
   display: inline-block;
-  background-color: #333;
-  color: #fff;
   padding: 10px 20px;
   cursor: pointer;
   border: none;
 }
 
 .contact-btn:hover {
-  background-color: #555;
+  background-color: #555 !important;
 }
 
 .social-icons {
@@ -288,7 +300,6 @@ footer{
 /* men.html */
 
 /* woman.html */
-
 /* TABLETS */
 
 @media (max-width: 768px){
