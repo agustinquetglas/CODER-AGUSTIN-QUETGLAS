@@ -15,31 +15,31 @@ HideCart()
 function CartButtonsEvents() {
 
     // TRASH BUTTON (BOTON QUE ELIMINA EL ITEM DEL CARRITO)
-    var TrashButton = document.getElementsByClassName('btn-trash');
+    var TrashButton = document.querySelectorAll('.btn-trash');
     for (var i = 0; i < TrashButton.length; i++) {
         TrashButton[i].addEventListener('click', EliminateItem);
     }
 
     // ADD BUTTON (BOTON QUE SUMA CANTIDAD DE A 1)
-    var AddButton = document.getElementsByClassName('add-quantity');
+    var AddButton = document.querySelectorAll('.add-quantity');
     for (var i = 0; i < AddButton.length; i++) {
         AddButton[i].addEventListener('click', AddItemQuantity);
     }
 
     // SUBTRACT BUTTON (BOTON QUE RESTA CANTIDAD DE A 1)
-    var SubtractButton = document.getElementsByClassName('subtract-quantity');
+    var SubtractButton = document.querySelectorAll('.subtract-quantity');
     for (var i = 0; i < SubtractButton.length; i++) {
         SubtractButton[i].addEventListener('click', SubtractItemQuantity);
     }
 
     // ADD TO CART BUTTON (BOTON QUE SUMA AL CARRITO)
-    var AddToCartButton = document.getElementsByClassName('add-to-cart-button');
+    var AddToCartButton = document.querySelectorAll('.add-to-cart-button');
     for (var i = 0; i < AddToCartButton.length; i++) {
         AddToCartButton[i].addEventListener('click', AddItemToCart);
     }
 
     // BUY BUTTON (BOTON DE COMPRA)
-    document.getElementsByClassName('btn-buy')[0].addEventListener('click', BuyCartButton);
+    document.querySelector('.btn-buy').addEventListener('click', BuyCartButton);
 
 }
 
@@ -79,15 +79,19 @@ function DisplayCart() {
     Products.style.marginRight = '320px';
 }
 
+var loadingFromLocalStorage
+
 // Función que crea el div y agrega el item al carrito
-function AddToCartButtonClicked(title, price, ItemImg) {
+function AddToCartButtonClicked(title, price, ItemImg, loadingFromLocalStorage = false) {
     var Item = document.createElement('div');
-    Item.classList.add('cart-item');
+    Item.classList.add('cart-item' );
     var Items = document.getElementsByClassName('cart-items')[0];
     var ItemsName = Items.getElementsByClassName('cart-item-title');
     for (let i = 0; i < ItemsName.length; i++) {
         if (ItemsName[i].textContent === title) {
-            alert("The item has already been added");
+            if (!loadingFromLocalStorage) { // Verificar si no se está cargando desde el almacenamiento local antes de mostrar la alerta
+                alert("The item has already been added");
+            }
             return;
         }
     }
@@ -124,6 +128,7 @@ function AddToCartButtonClicked(title, price, ItemImg) {
 
     // Actualizamos total
     CurrentTotalPrice();
+
 }
 
 // Función que suma al apretar boton ADD
@@ -192,3 +197,44 @@ function CurrentTotalPrice() {
 } 
 
 CartButtonsEvents()
+
+
+
+//CODIGO DE LOCAL STORAGE
+
+// Función para guardar el carrito en localStorage
+function SaveInStorage(ShoppingCart) {
+    localStorage.setItem('shopping-cart', JSON.stringify(ShoppingCart));
+}
+
+// Función para obtener el carrito desde localStorageGetFromStorage
+function GetFromStorage() {
+    return JSON.parse(localStorage.getItem('shopping-cart')) || [];
+}
+// Función para cargar el carrito al cargar la página
+function LoadStorage() {
+    var ShoppingCart = GetFromStorage();
+    for (var i = 0; i < ShoppingCart.length; i++) {
+        var item = ShoppingCart[i];
+        AddToCartButtonClicked(item.title, item.price, item.image, true);
+    }
+    CurrentTotalPrice();
+    DisplayCart();
+    HideCart()
+}
+
+// Función para guardar el carrito antes de salir de la página
+window.addEventListener('beforeunload', function() {
+    var ShoppingCart= document.querySelectorAll('.cart-item');
+    var items = [];
+    for (var i = 0; i < ShoppingCart.length; i++) {
+        var title = ShoppingCart[i].querySelector('.cart-item-title').innerText;
+        var price = ShoppingCart[i].querySelector('.cart-item-price').innerText;
+        var image = ShoppingCart[i].querySelector('img').src;
+        items.push({title: title, price: price, image: image});
+    }
+    SaveInStorage(items);
+});
+
+// Llama a la función cargarCarrito al cargar la página
+LoadStorage();
