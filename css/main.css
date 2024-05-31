@@ -334,6 +334,10 @@ footer{
   margin: 5px 0 0 5px
 }
 
+.buy-button-link{
+  text-decoration: none;
+}
+
 .btn-buy{
   display: block;
   width: -webkit-fill-available;
@@ -432,6 +436,65 @@ footer{
 /* men.html */
 
 /* woman.html */
+
+/* buy-form.html */
+.form-box{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 100px 0px auto;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.checkout-form .form-group {
+  margin-bottom: 15px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkout-form .submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-form .submit-btn:hover {
+  background-color: #218838;
+}
 /* TABLETS */
 
 @media screen and (max-width: 768px){

@@ -1,0 +1,6 @@
+{
+    "toastDuration": 7000,
+    "BuyMessage": "You will now be redirected to the checkout form",
+    "successMessage": "Your purchase has been successfully completed, your order will now be shipped to {address}. You will be redirected to the home page. Thanks for trusting in DUSKY!!",
+    "ErrorMessage": "There was an problem, try again later:"
+}
