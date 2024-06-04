@@ -46,14 +46,12 @@ function CartButtonsEvents() {
 
 // Función para boton de Comprar
 function BuyCartButton() {
-    // Fetching data from JSON file
+    // Traer data del JSON
     fetch('../data.json')
         .then(response => response.json())
         .then(data => {
             let toastDuration = data.toastDuration;
             let BuyMessage = data.BuyMessage;
-
-            // Showing the toast
             Toastify({
                 text: BuyMessage,
                 duration: toastDuration,
@@ -65,10 +63,10 @@ function BuyCartButton() {
                 style: {
                     background: "#333",
                 },
-                onClick: function(){} // Callback after click
+                onClick: function(){}
             }).showToast();
 
-            // Clearing the cart and redirecting after the toast disappears
+            //Redireccion a formulario despues de comprar
             let CartItems = document.getElementsByClassName('cart-items')[0];
             while (CartItems.hasChildNodes()) {
                 CartItems.removeChild(CartItems.firstChild);
@@ -90,8 +88,8 @@ function AddItemToCart(event) {
     let price = item.getElementsByClassName('product-price')[0].innerText
     let ItemImg = item.getElementsByClassName('product-img')[0].src
     // Llamar a la función correcta: AddToCartButton -> AddToCartButtonClicked
-    AddToCartButtonClicked(title, price, ItemImg)
-    DisplayCart()
+    AddToCartButtonClicked(title, price, ItemImg, loadingFromLocalStorage = false)
+    DisplayCart()   
 }
 
 // Función que hace visible el carrito
@@ -126,7 +124,7 @@ function AddToCartButtonClicked(title, price, ItemImg, loadingFromLocalStorage =
                     style: {
                       background: "#333",
                     },
-                    onClick: function(){} // Callback after click
+                    onClick: function(){}
                   }).showToast();
             }
             return
@@ -249,10 +247,12 @@ function GetFromStorage() {
 // Función para cargar el carrito al cargar la página
 function LoadStorage() {
     let ShoppingCart = GetFromStorage();
+    loadingFromLocalStorage = true
     for (let i = 0; i < ShoppingCart.length; i++) {
         let item = ShoppingCart[i]
         AddToCartButtonClicked(item.title, item.price, item.image, true)
     }
+    loadingFromLocalStorage = false
     CurrentTotalPrice()
     DisplayCart()
     HideCart()
